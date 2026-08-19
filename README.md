@@ -1,7 +1,7 @@
 **Setup**
 
 ## Debian/Ubuntu
-**Apply this all he command to fix this issue**
+**Apply all of this command to fix this issue**
 
 ### 1. এটি যা করবে:
 
