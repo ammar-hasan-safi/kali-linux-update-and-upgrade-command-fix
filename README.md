@@ -1,6 +1,6 @@
 **Setup**
 
-## Debian/Ubuntu
+## Debian/Ubuntu/Kali Linux
 **Apply all of this command to fix this issue**
 
 ### 1. এটি যা করবে:
@@ -23,9 +23,9 @@ sudo rm -rf /var/lib/apt/lists/* && \
 sudo apt update
 ```
 
-### 2. এরপর যদি সব ঠিক থাকে, সিস্টেম আপগ্রেড করতে চালান:
+### 2. এরপর যদি সব ঠিক থাকে, সিস্টেম আপগ্রেড করতে নিচের কমান্ড টি চালান:
 
-**Ubuntu 18.04 and above or Debian 10 and above**
+**Ubuntu 18.04 and above or Debian 10 and above And Kali Linux**
 ```bash
 sudo apt full-upgrade -y
 ```
@@ -39,7 +39,7 @@ sudo rm -rf /var/lib/apt/lists/*
 sudo apt update
 ```
 
-### 4. এরপর যদি সব ঠিক থাকে, সিস্টেম আপডেট && আপগ্রেড করতে চালান:
+### 4. এরপর যদি সবকিছু ঠিক থাকে তাহলে সিস্টেম আপডেট && আপগ্রেড করতে নিচের কমান্ডটি চালান:
 ```bash
 sudo apt update -y && sudo apt upgrade -y && sudo apt full-ugrade
 ```
