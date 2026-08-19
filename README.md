@@ -1,6 +1,7 @@
-markdown# Setup
+**Setup**
 
 ## Debian/Ubuntu
+**Apply this all he command to fix this issue**
 
 ### এটি যা করবে:
 
