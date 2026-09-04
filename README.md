@@ -3,12 +3,9 @@
 ## Debian/Ubuntu/Kali Linux
 **Apply all of this command to fix this issue**
 
-### 1. এটি যা করবে:
+### 1. This will: 
 
-/etc/apt/sources.list সরিয়ে দেবে (যাতে duplicate না থাকে)।
-ডিফল্ট kali.sources ফাইল তৈরি করবে।
-APT cache পরিষ্কার করবে।
-নতুন করে repository index download করবে।
+Remove `/etc/apt/sources.list` (to avoid duplicates). Create a default `kali.sources` file. Clear the APT cache. Download the repository index anew.
 ```bash
 sudo rm -f /etc/apt/sources.list && \
 sudo tee /etc/apt/sources.list.d/kali.sources >/dev/null <<EOF
@@ -23,7 +20,7 @@ sudo rm -rf /var/lib/apt/lists/* && \
 sudo apt update
 ```
 
-### 2. এরপর যদি সব ঠিক থাকে, সিস্টেম আপগ্রেড করতে নিচের কমান্ড টি চালান:
+### 2. If everything is in order, run the following command to upgrade the system:
 
 **Ubuntu 18.04 and above or Debian 10 and above And Kali Linux**
 ```bash
@@ -31,7 +28,8 @@ sudo apt full-upgrade -y
 ```
 **এটি Kali Linux-এর ডিফল্ট repository কনফিগারেশনে ফিরিয়ে এনে সর্বশেষ package list ও package আপডেট করবে।**
 
-### 3. HTTPS mirror ব্যবহার করুন:
+### 3. Use an HTTPS mirror:
+
 ```bash
 sudo sed -i 's|http://http.kali.org/kali|https://kali.download/kali|g' /etc/apt/sources.list.d/kali.sources
 sudo apt clean
@@ -39,7 +37,8 @@ sudo rm -rf /var/lib/apt/lists/*
 sudo apt update
 ```
 
-### 4. এরপর যদি সবকিছু ঠিক থাকে তাহলে সিস্টেম আপডেট && আপগ্রেড করতে নিচের কমান্ডটি চালান:
+### 4. If everything is in order, run the following command to update and upgrade the system:
+
 ```bash
 sudo apt update -y && sudo apt upgrade -y && sudo apt full-ugrade
 ```
