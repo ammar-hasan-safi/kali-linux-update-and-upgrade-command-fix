@@ -5,7 +5,7 @@
 
 ### 1. This will: 
 
-Remove `/etc/apt/sources.list` (to avoid duplicates). Create a default `kali.sources` file. Clear the APT cache. Download the repository index anew.
+Remove `/etc/apt/sources.list` (to avoid duplicates). Create a default `kali.sources` file. Clear the APT cache. Download the repository index a new.
 ```bash
 sudo rm -f /etc/apt/sources.list && \
 sudo tee /etc/apt/sources.list.d/kali.sources >/dev/null <<EOF
