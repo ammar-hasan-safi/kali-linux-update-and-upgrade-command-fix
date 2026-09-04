@@ -26,7 +26,7 @@ sudo apt update
 ```bash
 sudo apt full-upgrade -y
 ```
-**এটি Kali Linux-এর ডিফল্ট repository কনফিগারেশনে ফিরিয়ে এনে সর্বশেষ package list ও package আপডেট করবে।**
+** This will revert Kali Linux to its default repository configuration and update the package list and packages. **
 
 ### 3. Use an HTTPS mirror:
 
